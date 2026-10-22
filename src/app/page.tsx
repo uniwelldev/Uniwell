@@ -7,7 +7,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { Navigation } from '@/components/navigation';
-import { MotionProvider, CursorGlow } from '@/components/animations';
+import { MotionProvider } from '@/components/animations';
 import { ServiceAccordion } from '@/components/service-accordion';
 import { HeroOrb } from '@/components/hero-orb';
 import { Cursor } from '@/components/cursor';
@@ -22,7 +22,6 @@ export default function Home() {
   return (
     <MotionProvider>
       <main id="top">
-        <CursorGlow />
         <Cursor />
         <div className="dark-stage">
           <Navigation />

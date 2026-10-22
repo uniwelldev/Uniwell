@@ -33,7 +33,7 @@ export const projects: Project[] = [
     summary: 'A short, one-line description of what you built for this client.',
     challenge: 'What problem did the client come to you with?',
     solution: 'What did you design, build or run to solve it?',
-    accent: 'linear-gradient(135deg,#6d53bc,#b6a4ff)',
+    accent: 'linear-gradient(135deg,#a6e000,#e9ff8a)',
     sample: true,
   },
   {
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     category: 'social-content',
     summary:
       'A short, one-line description of the campaign or content you made.',
-    accent: 'linear-gradient(135deg,#c4527a,#ffb48a)',
+    accent: 'linear-gradient(135deg,#f04e1f,#ffb48a)',
     sample: true,
   },
   {

@@ -12,6 +12,27 @@ export function MotionProvider({ children }: { children: React.ReactNode }) {
     lenis.on('scroll', ScrollTrigger.update);
     const tick = (time: number) => lenis.raf(time * 1000);
     gsap.ticker.add(tick);
+
+    // The marquee speeds up with scroll speed and runs backwards when scrolling up.
+    const marquee = document
+      .querySelector('.marquee-track')
+      ?.getAnimations?.()[0];
+    let target = 1;
+    let rate = 1;
+    if (marquee) {
+      lenis.on('scroll', ({ velocity }: { velocity: number }) => {
+        target = 1 + velocity * 0.35;
+      });
+    }
+    const eased = () => {
+      if (!marquee) return;
+      target += (1 - target) * 0.04;
+      rate += (target - rate) * 0.12;
+      if (Math.abs(rate - marquee.playbackRate) > 0.01) {
+        marquee.playbackRate = rate;
+      }
+    };
+    gsap.ticker.add(eased);
     gsap.ticker.lagSmoothing(0);
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -54,24 +75,10 @@ export function MotionProvider({ children }: { children: React.ReactNode }) {
     }, ref);
     return () => {
       gsap.ticker.remove(tick);
+      gsap.ticker.remove(eased);
       lenis.destroy();
       ctx.revert();
     };
   }, []);
   return <div ref={ref}>{children}</div>;
-}
-export function CursorGlow() {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (window.matchMedia('(pointer: coarse)').matches) return;
-    const onMove = (e: PointerEvent) => {
-      if (ref.current) {
-        ref.current.style.setProperty('--x', `${e.clientX}px`);
-        ref.current.style.setProperty('--y', `${e.clientY}px`);
-      }
-    };
-    window.addEventListener('pointermove', onMove, { passive: true });
-    return () => window.removeEventListener('pointermove', onMove);
-  }, []);
-  return <div ref={ref} className="cursor-glow" aria-hidden="true" />;
 }

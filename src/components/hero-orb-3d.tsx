@@ -28,10 +28,10 @@ const vertex = /* glsl */ `
     gl_PointSize = uPixel * (1.9 + aSeed * 2.2 + push * 3.5) * (7.0 / -view.z);
 
     float t = clamp(p.y * 0.35 + 0.5, 0.0, 1.0);
-    vec3 violet = vec3(0.71, 0.64, 1.0);
-    vec3 pink = vec3(1.0, 0.62, 0.84);
-    vec3 mint = vec3(0.62, 0.98, 0.84);
-    vColor = mix(mix(mint, violet, smoothstep(0.0, 0.5, t)), pink, smoothstep(0.5, 1.0, t));
+    vec3 lime = vec3(0.78, 1.0, 0.18);
+    vec3 pale = vec3(0.96, 1.0, 0.8);
+    vec3 ember = vec3(0.94, 0.31, 0.12);
+    vColor = mix(mix(ember, lime, smoothstep(0.0, 0.5, t)), pale, smoothstep(0.5, 1.0, t));
     vColor = mix(vColor, vec3(1.0), push * 0.7);
     vAlpha = (0.18 + 0.82 * smoothstep(-1.6, 1.6, w.z)) + push * 0.4;
   }

@@ -27,7 +27,7 @@ export default function OpengraphImage() {
           display: 'flex',
         }}
       >
-        WE MAKE WHAT&apos;S&nbsp;<span style={{ color: '#b6a4ff' }}>NEXT</span>
+        WE MAKE WHAT&apos;S&nbsp;<span style={{ color: '#c8ff2e' }}>NEXT</span>
       </div>
       <div style={{ fontSize: 28, color: '#bbb7ba' }}>
         Creative × Technology × Growth

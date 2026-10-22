@@ -12,7 +12,7 @@ export const services = [
   {
     index: '01',
     slug: 'digital-marketing',
-    tone: 'linear-gradient(165deg,#2a1f55 0%,#6d53bc 100%)',
+    tone: 'linear-gradient(165deg,#1a2a00 0%,#5f9300 100%)',
     title: 'Digital Marketing',
     tag: 'GROWTH',
     detail:
@@ -27,7 +27,7 @@ export const services = [
   {
     index: '02',
     slug: 'social-content',
-    tone: 'linear-gradient(165deg,#4a1830 0%,#c4527a 100%)',
+    tone: 'linear-gradient(165deg,#3a0d00 0%,#f04e1f 100%)',
     title: 'Social & Content',
     tag: 'CULTURE',
     detail:
@@ -42,7 +42,7 @@ export const services = [
   {
     index: '03',
     slug: 'ai-automation',
-    tone: 'linear-gradient(165deg,#0d3a40 0%,#2c9b8f 100%)',
+    tone: 'linear-gradient(165deg,#00201c 0%,#0fb59a 100%)',
     title: 'AI & Automation',
     tag: 'INTELLIGENCE',
     detail:
@@ -57,7 +57,7 @@ export const services = [
   {
     index: '04',
     slug: 'web-software',
-    tone: 'linear-gradient(165deg,#141e52 0%,#4a78e0 100%)',
+    tone: 'linear-gradient(165deg,#0b1445 0%,#2f5bff 100%)',
     title: 'Web & Software',
     tag: 'EXPERIENCE',
     detail:
@@ -72,7 +72,7 @@ export const services = [
   {
     index: '05',
     slug: 'brand-design',
-    tone: 'linear-gradient(165deg,#4a3410 0%,#d29a3a 100%)',
+    tone: 'linear-gradient(165deg,#3d2a00 0%,#f2b01e 100%)',
     title: 'Brand & Design',
     tag: 'IDENTITY',
     detail:
