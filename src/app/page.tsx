@@ -1,0 +1,181 @@
+import Link from 'next/link';
+import {
+  ArrowDownRight,
+  ArrowRight,
+  ArrowUpRight,
+  Asterisk,
+  Sparkles,
+} from 'lucide-react';
+import { Navigation } from '@/components/navigation';
+import { MotionProvider, CursorGlow } from '@/components/animations';
+import { ServiceAccordion } from '@/components/service-accordion';
+import { HeroOrb } from '@/components/hero-orb';
+import { Cursor } from '@/components/cursor';
+import { Contact } from '@/components/contact';
+import { Footer } from '@/components/footer';
+import { Intro } from '@/components/intro';
+import { Approach } from '@/components/approach';
+import { projects } from '@/lib/projects';
+import { ProjectCard } from '@/components/project-card';
+
+export default function Home() {
+  return (
+    <MotionProvider>
+      <main id="top">
+        <CursorGlow />
+        <Cursor />
+        <div className="dark-stage">
+          <Navigation />
+          <section className="hero container">
+            <div className="hero-meta" data-hero-reveal>
+              <span>
+                <span className="status-dot" /> INDEPENDENT DIGITAL STUDIO
+              </span>
+              <span>CREATIVE × TECH × GROWTH</span>
+            </div>
+            <div className="hero-title-wrap">
+              <h1 className="hero-title" aria-label="We make what's next">
+                <span data-hero-reveal aria-hidden="true">
+                  WE MAKE
+                </span>
+                <span data-hero-reveal aria-hidden="true">
+                  WHAT&apos;S{' '}
+                  <i>
+                    NEXT<span className="title-star">✳</span>
+                  </i>
+                </span>
+              </h1>
+              <HeroOrb />
+            </div>
+            <div className="hero-bottom" data-hero-reveal>
+              <p>
+                Ideas are easy. Impact is everything. We build brands, digital
+                experiences and intelligent systems that move businesses
+                forward.
+              </p>
+              <a
+                href="#expertise"
+                className="round-arrow"
+                aria-label="Explore our expertise"
+              >
+                <ArrowDownRight size={28} />
+              </a>
+              <span className="vertical-marker">SCROLL TO EXPLORE — 001</span>
+            </div>
+            <div className="hero-grid" aria-hidden="true" />
+          </section>
+          <div className="marquee" aria-hidden="true">
+            <div className="marquee-track">
+              {Array.from({ length: 4 }).map((_, i) => (
+                <span key={i}>
+                  STRATEGY <Asterisk /> DESIGN <Asterisk /> TECHNOLOGY{' '}
+                  <Asterisk /> AUTOMATION <Asterisk />{' '}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <Intro />
+
+        <section className="services-section" id="expertise">
+          <div className="container">
+            <div className="section-topline dark-line" data-reveal>
+              <span>02 / WHAT WE DO</span>
+              <span>CONNECTED CAPABILITIES</span>
+            </div>
+            <div className="services-head" data-reveal>
+              <h2>
+                ONE STUDIO.
+                <br />
+                <em>ENDLESS</em> POSSIBILITIES.
+              </h2>
+              <p>
+                From first impression to lasting impact. Every discipline
+                working together.
+              </p>
+            </div>
+            <ServiceAccordion />
+          </div>
+        </section>
+
+        <section className="work-section" id="work">
+          <div className="container">
+            <div className="section-topline" data-reveal>
+              <span>03 / SELECTED WORK</span>
+              <span>RECENT PROJECTS</span>
+            </div>
+            <div className="work-head" data-reveal>
+              <h2>
+                MADE WITH
+                <br />
+                <em>PEOPLE.</em>
+              </h2>
+              <Link className="text-link" href="/work">
+                VIEW ALL WORK <ArrowUpRight size={18} />
+              </Link>
+            </div>
+            <div className="work-grid">
+              {projects.slice(0, 3).map((p) => (
+                <ProjectCard key={p.slug} project={p} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="manifesto-section">
+          <div className="manifesto-visual" aria-hidden="true">
+            <div className="manifesto-shape" data-parallax>
+              <span>
+                U<span>✳</span>
+              </span>
+            </div>
+          </div>
+          <div className="container manifesto-content">
+            <p className="eyebrow light" data-reveal>
+              BUILT FOR THE BOLD
+            </p>
+            <h2 data-reveal>
+              ORDINARY
+              <br />
+              IS NOT <em>OUR</em>
+              <br />
+              THING.
+            </h2>
+            <p data-reveal>
+              We blend human creativity and emerging technology to make work
+              that feels different — and delivers differently.
+            </p>
+          </div>
+        </section>
+
+        <Approach />
+
+        <section className="statement-section">
+          <div className="container" data-reveal>
+            <span>YOUR NEXT CHAPTER STARTS HERE</span>
+            <p>
+              GREAT IDEAS
+              <br />
+              DESERVE <i>GREAT</i>
+              <br />
+              EXECUTION<span className="period">.</span>
+            </p>
+            <a href="#contact">
+              LET&apos;S MAKE IT HAPPEN <ArrowRight size={20} />
+            </a>
+          </div>
+          <Sparkles
+            className="statement-spark"
+            size={150}
+            strokeWidth={0.7}
+            aria-hidden="true"
+          />
+        </section>
+
+        <Contact />
+        <Footer />
+      </main>
+    </MotionProvider>
+  );
+}
