@@ -133,7 +133,7 @@ export function Intro() {
       <div className="container">
         <div className="section-topline" data-reveal>
           <span>01 / WHO WE ARE</span>
-          <span>UNIVELLE® — THE NEW STANDARD</span>
+          <span>BYTELAMP® — THE NEW STANDARD</span>
         </div>
 
         <p className={seen ? 'intro2-tag in' : 'intro2-tag'}>

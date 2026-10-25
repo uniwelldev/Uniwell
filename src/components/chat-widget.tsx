@@ -95,7 +95,7 @@ export function ChatWidget() {
           aria-label="Chat assistant"
         >
           <header>
-            <strong>Ask UNIVELLE</strong>
+            <strong>Ask BYTELAMP</strong>
             <span>AI assistant</span>
           </header>
           <div className="chat-log" ref={log} aria-live="polite">

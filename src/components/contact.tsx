@@ -100,7 +100,7 @@ export function Contact() {
       if (valid[step]) setStep(step + 1);
       return;
     }
-    const subject = `UNIVELLE project inquiry — ${service}`;
+    const subject = `BYTELAMP project inquiry — ${service}`;
     const body = `Name: ${name}\nEmail: ${email}\nService: ${service}\nStart: ${timeline}\n\nProject:\n${idea}`;
     if (!emailReady) {
       setStatus(

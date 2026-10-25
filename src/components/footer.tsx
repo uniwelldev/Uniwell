@@ -6,8 +6,8 @@ export function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-top">
-          <Link href="/" className="footer-logo" aria-label="UNIVELLE home">
-            UNIVELLE<span>®</span>
+          <Link href="/" className="footer-logo" aria-label="BYTELAMP home">
+            BYTELAMP<span>®</span>
           </Link>
           <p>
             CREATIVE MINDS.

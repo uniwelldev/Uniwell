@@ -1,11 +1,11 @@
 export const site = {
-  name: 'UNIVELLE',
+  name: 'BYTELAMP',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
   email: 'hello@example.com', // Replace before launch
   whatsapp: '', // International number without +, e.g. 919876543210
   bookingUrl: '', // Your Calendly/Cal.com public booking link
   description:
-    'UNIVELLE is an independent digital studio building brands, experiences and intelligent systems.',
+    'BYTELAMP is an independent digital studio building brands, experiences and intelligent systems.',
 };
 
 export const services = [

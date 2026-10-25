@@ -18,13 +18,13 @@ const space = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: 'UNIVELLE® — Creative, Technology & Growth',
-    template: '%s | UNIVELLE®',
+    default: 'BYTELAMP® — Creative, Technology & Growth',
+    template: '%s | BYTELAMP®',
   },
   description: site.description,
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'UNIVELLE® — Make What’s Next',
+    title: 'BYTELAMP® — Make What’s Next',
     description: site.description,
     type: 'website',
     siteName: site.name,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UNIVELLE® — Make What’s Next',
+    title: 'BYTELAMP® — Make What’s Next',
     description: site.description,
   },
 };

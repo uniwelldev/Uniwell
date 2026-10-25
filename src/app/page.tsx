@@ -126,7 +126,7 @@ export default function Home() {
           <div className="manifesto-visual" aria-hidden="true">
             <div className="manifesto-shape" data-parallax>
               <span>
-                U<span>✳</span>
+                B<span>✳</span>
               </span>
             </div>
           </div>

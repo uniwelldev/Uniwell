@@ -8,7 +8,7 @@ import { projects } from '@/lib/projects';
 export const metadata: Metadata = {
   title: 'Our Work',
   description:
-    'Selected projects by UNIVELLE across brand, web, content, marketing and AI.',
+    'Selected projects by BYTELAMP across brand, web, content, marketing and AI.',
   alternates: { canonical: '/work' },
 };
 

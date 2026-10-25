@@ -23,8 +23,8 @@ export function Navigation() {
 
   return (
     <header className="site-header">
-      <Link className="wordmark" href="/" aria-label="UNIVELLE home">
-        UNIVELLE<span>®</span>
+      <Link className="wordmark" href="/" aria-label="BYTELAMP home">
+        BYTELAMP<span>®</span>
       </Link>
       <nav
         id="main-nav"

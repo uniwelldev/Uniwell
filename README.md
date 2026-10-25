@@ -1,4 +1,4 @@
-# UNIVELLE® — Agency Website / Phase 1
+# BYTELAMP® — Agency Website / Phase 1
 
 An original, responsive Next.js 15 + React 19 + TypeScript + Tailwind 4 homepage with GSAP scroll animation, accessible mobile navigation, reusable visual system, services, approach and inquiry UI.
 

@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 
-export const alt = 'UNIVELLE® — Creative, Technology & Growth';
+export const alt = 'BYTELAMP® — Creative, Technology & Growth';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -18,7 +18,7 @@ export default function OpengraphImage() {
         padding: 72,
       }}
     >
-      <div style={{ fontSize: 44, fontWeight: 700 }}>UNIVELLE®</div>
+      <div style={{ fontSize: 44, fontWeight: 700 }}>BYTELAMP®</div>
       <div
         style={{
           fontSize: 120,
