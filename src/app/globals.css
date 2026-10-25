@@ -62,6 +62,17 @@ button {
   font: 700 32px var(--font-display);
   letter-spacing: -1px;
 }
+.wordmark em,
+.footer-logo em {
+  font-style: normal;
+  font-weight: 400;
+}
+.logo-mark {
+  height: 1em;
+  width: 1em;
+  margin-right: 0.12em;
+  vertical-align: -0.14em;
+}
 .wordmark span,
 .footer-logo span {
   font: 500 11px var(--font-body);

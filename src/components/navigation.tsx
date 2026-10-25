@@ -24,7 +24,9 @@ export function Navigation() {
   return (
     <header className="site-header">
       <Link className="wordmark" href="/" aria-label="BYTELAMP home">
-        BYTELAMP<span>®</span>
+        <LogoMark className="logo-mark" />
+        BYTE<em>LAMP</em>
+        <span>®</span>
       </Link>
       <nav
         id="main-nav"

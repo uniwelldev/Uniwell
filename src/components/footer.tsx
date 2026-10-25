@@ -7,7 +7,9 @@ export function Footer() {
       <div className="container">
         <div className="footer-top">
           <Link href="/" className="footer-logo" aria-label="BYTELAMP home">
-            BYTELAMP<span>®</span>
+            <LogoMark className="logo-mark" />
+            BYTE<em>LAMP</em>
+            <span>®</span>
           </Link>
           <p>
             CREATIVE MINDS.
