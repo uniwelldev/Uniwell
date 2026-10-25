@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
+import { LogoMark } from '@/components/logo';
 
 const links = [
   ['Expertise', '/#expertise'],

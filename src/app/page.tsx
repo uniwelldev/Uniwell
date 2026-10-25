@@ -10,6 +10,7 @@ import { Navigation } from '@/components/navigation';
 import { MotionProvider } from '@/components/animations';
 import { ServiceAccordion } from '@/components/service-accordion';
 import { HeroOrb } from '@/components/hero-orb';
+import { LogoMark } from '@/components/logo';
 import { Cursor } from '@/components/cursor';
 import { Contact } from '@/components/contact';
 import { Footer } from '@/components/footer';
@@ -125,9 +126,13 @@ export default function Home() {
         <section className="manifesto-section">
           <div className="manifesto-visual" aria-hidden="true">
             <div className="manifesto-shape" data-parallax>
-              <span>
-                B<span>✳</span>
-              </span>
+              <div className="manifesto-orbit manifesto-orbit-one" />
+              <div className="manifesto-orbit manifesto-orbit-two" />
+              <div className="manifesto-logo-panel">
+                <LogoMark className="manifesto-logo-mark" />
+                <span className="manifesto-logo-name">BYTE<strong>LAMP</strong><sup>®</sup></span>
+              </div>
+              <span className="manifesto-design-note">CREATIVITY × INTELLIGENCE</span>
             </div>
           </div>
           <div className="container manifesto-content">

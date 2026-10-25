@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { site } from '@/lib/config';
+import { LogoMark } from '@/components/logo';
 
 export function Footer() {
   return (
