@@ -21,42 +21,70 @@ export type Project = {
   sample?: boolean;
 };
 
-// TODO: replace these SAMPLE entries with your real projects. Each sample
-// shows a "SAMPLE" badge on the site so nothing here is mistaken for real work.
 export const projects: Project[] = [
   {
-    slug: 'sample-brand-website',
-    title: 'Sample Project One',
-    client: 'Client name',
+    slug: 'digitalfunda',
+    title: 'DigitalFunda',
+    client: 'DigitalFunda',
     year: '2026',
     category: 'web-software',
-    summary: 'A short, one-line description of what you built for this client.',
-    challenge: 'What problem did the client come to you with?',
-    solution: 'What did you design, build or run to solve it?',
-    accent: 'linear-gradient(135deg,#a6e000,#e9ff8a)',
-    sample: true,
+    summary:
+      'Website for a performance marketing agency in India, built around Google Ads, Meta Ads and measurable growth.',
+    image: '/work/digitalfunda.jpg',
+    url: 'https://digital-funda-website.vercel.app/',
+    challenge:
+      'DigitalFunda needed a site that explains performance marketing in business terms and turns visitors into growth conversations.',
+    solution:
+      'We designed and built a dark, data-led website with an animated campaign-intelligence hero, service and approach sections, an FAQ and a clear "Discuss your growth" call to action.',
+    accent: 'linear-gradient(135deg,#0b1445,#5b6cff)',
   },
   {
-    slug: 'sample-social-campaign',
-    title: 'Sample Project Two',
-    client: 'Client name',
+    slug: 'geekybuzz',
+    title: 'GeekyBuzz',
+    client: 'GeekyBuzz',
     year: '2026',
-    category: 'social-content',
+    category: 'web-software',
     summary:
-      'A short, one-line description of the campaign or content you made.',
-    accent: 'linear-gradient(135deg,#f04e1f,#ffb48a)',
-    sample: true,
+      'A review and comparison platform that helps people find SaaS and AI tools worth their money.',
+    image: '/work/geekybuzz.jpg',
+    url: 'https://www.geekybuzz.com/',
+    challenge:
+      'Choosing software is confusing: too many tools, unclear pricing and reviews that read like ads.',
+    solution:
+      'We designed and built a fast content platform with tool search, task-based browsing, side-by-side comparisons, pricing breakdowns and practical guides.',
+    accent: 'linear-gradient(135deg,#5b2bd6,#c9a8ff)',
   },
   {
-    slug: 'sample-automation',
-    title: 'Sample Project Three',
-    client: 'Client name',
+    slug: 'inaya-travels',
+    title: 'Inaya Travels',
+    client: 'Inaya Travels',
     year: '2026',
-    category: 'ai-automation',
+    category: 'web-software',
     summary:
-      'A short, one-line description of the system or workflow you automated.',
-    accent: 'linear-gradient(135deg,#1f6f78,#9ef0d2)',
-    sample: true,
+      'Website for a travel company selling handpicked tour packages across India and the world, booked over WhatsApp.',
+    image: '/work/inaya-travels.jpg',
+    url: 'https://www.inayatravelsltd.com/',
+    challenge:
+      'Inaya Travels wanted travellers to see complete itineraries and prices up front, then book without long forms or back-and-forth.',
+    solution:
+      'We designed and built a warm, editorial website with destination and deal listings, package pages with itinerary and price, a downloadable brochure and a WhatsApp-first booking flow.',
+    accent: 'linear-gradient(135deg,#3d2a00,#e8c98a)',
+  },
+  {
+    slug: 'pawaac',
+    title: 'PAWAAC Drones',
+    client: 'PAWAAC',
+    year: '2026',
+    category: 'web-software',
+    summary:
+      'Website for an Indian defence-tech company building fully autonomous surveillance drones for army and police.',
+    image: '/work/pawaac.jpg',
+    url: 'https://pawaac.com/',
+    challenge:
+      'PAWAAC needed to explain complex autonomous drone technology to defence and police buyers in a way that feels credible and clear.',
+    solution:
+      'We designed and built a cinematic, dark website with a 3D drone hero, sections on the problem, core technology (GPS-denied navigation, vision AI, decision OS), operating environments and products.',
+    accent: 'linear-gradient(135deg,#000000,#3a3a3a)',
   },
 ];
 

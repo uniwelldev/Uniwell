@@ -1284,6 +1284,7 @@ html.has-cursor select {
 }
 .project-media img {
   object-fit: cover;
+  object-position: left top;
 }
 .project-card:hover .project-media {
   transform: translateY(-6px);
