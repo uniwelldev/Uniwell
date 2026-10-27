@@ -109,7 +109,7 @@ export default function Home() {
           <div className="container">
             <div className="section-topline" data-reveal>
               <span>03 / SELECTED WORK</span>
-              <span>RECENT PROJECTS</span>
+              <span>500+ PROJECTS DELIVERED</span>
             </div>
             <div className="work-head" data-reveal>
               <h2>
