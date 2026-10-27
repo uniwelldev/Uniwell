@@ -7,7 +7,7 @@ import { LogoMark } from '@/components/logo';
 const links = [
   ['Expertise', '/#expertise'],
   ['Work', '/work'],
-  ['About', '/#about'],
+  ['About', '/about'],
   ['Approach', '/#approach'],
   ['Contact', '/#contact'],
 ];

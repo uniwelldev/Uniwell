@@ -145,7 +145,7 @@ button {
   margin-top: 88px;
 }
 .hero-title {
-  font: 600 clamp(82px, 12.4vw, 205px)/0.9 var(--font-display);
+  font: 600 clamp(56px, 9.2vw, 150px)/0.92 var(--font-display);
   letter-spacing: -0.03em;
   position: relative;
   z-index: 2;
@@ -855,7 +855,7 @@ button {
     margin-top: 125px;
   }
   .hero-title {
-    font-size: clamp(49px, 12.3vw, 85px);
+    font-size: clamp(32px, 8.6vw, 64px);
     letter-spacing: -0.03em;
   }
   .hero-orb {
@@ -2845,4 +2845,81 @@ html.has-cursor input:not([type='radio']),
 html.has-cursor textarea,
 html.has-cursor select {
   cursor: text !important;
+}
+
+.about-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 30px;
+}
+.about-services a {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px;
+  border: 1px solid #29292945;
+  border-radius: 14px;
+  transition: background 0.2s;
+}
+.about-services a:hover {
+  background: #14141410;
+}
+.about-services span,
+.about-services em {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+.about-services strong {
+  font: 500 20px var(--font-display);
+  letter-spacing: -0.03em;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 24px;
+}
+.team-photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--ink);
+  display: grid;
+  place-items: center;
+}
+.team-photo img {
+  object-fit: cover;
+}
+.team-photo span {
+  font: 600 56px var(--font-display);
+  color: var(--violet);
+}
+.team-card h3 {
+  font: 500 20px var(--font-display);
+  letter-spacing: -0.03em;
+  margin: 16px 0 4px;
+}
+.team-card p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.team-card small {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4f4b47;
+}
+@media (max-width: 700px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

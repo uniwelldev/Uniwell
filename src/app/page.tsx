@@ -31,17 +31,23 @@ export default function Home() {
               <span>
                 <span className="status-dot" /> INDEPENDENT DIGITAL STUDIO
               </span>
-              <span>CREATIVE × TECH × GROWTH</span>
+              <span>MARKETING × CONTENT × AI × SOFTWARE × BRAND</span>
             </div>
             <div className="hero-title-wrap">
-              <h1 className="hero-title" aria-label="We make what's next">
+              <h1
+                className="hero-title"
+                aria-label="We Automate. We Create. We Accelerate."
+              >
                 <span data-hero-reveal aria-hidden="true">
-                  WE MAKE
+                  WE AUTOMATE.
                 </span>
                 <span data-hero-reveal aria-hidden="true">
-                  WHAT&apos;S{' '}
+                  WE CREATE.
+                </span>
+                <span data-hero-reveal aria-hidden="true">
+                  WE{' '}
                   <i>
-                    NEXT<span className="title-star">✳</span>
+                    ACCELERATE<span className="title-star">✳</span>
                   </i>
                 </span>
               </h1>
@@ -49,8 +55,8 @@ export default function Home() {
             </div>
             <div className="hero-bottom" data-hero-reveal>
               <p>
-                Ideas are easy. Impact is everything. We build brands, digital
-                experiences and intelligent systems that move businesses
+                One studio for everything digital. Brand, website, content, marketing and
+                AI automation, built to work together and move your business
                 forward.
               </p>
               <a
