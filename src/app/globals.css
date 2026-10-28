@@ -131,14 +131,8 @@ button {
   letter-spacing: 0.16em;
   color: #c6c1c6;
 }
-.status-dot {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #c6fc9a;
-  margin-right: 9px;
-  box-shadow: 0 0 12px #c6fc9a;
+.hero-meta a:hover {
+  color: var(--violet);
 }
 .hero-title-wrap {
   position: relative;
@@ -848,7 +842,7 @@ button {
     font-size: 8px;
     gap: 20px;
   }
-  .hero-meta > span:last-child {
+  .hero-meta > :last-child {
     text-align: right;
   }
   .hero-title-wrap {

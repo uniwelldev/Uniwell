@@ -17,6 +17,7 @@ import { Footer } from '@/components/footer';
 import { Intro } from '@/components/intro';
 import { Approach } from '@/components/approach';
 import { projects } from '@/lib/projects';
+import { site } from '@/lib/config';
 import { ProjectCard } from '@/components/project-card';
 
 export default function Home() {
@@ -28,10 +29,8 @@ export default function Home() {
           <Navigation />
           <section className="hero container">
             <div className="hero-meta" data-hero-reveal>
-              <span>
-                <span className="status-dot" /> INDEPENDENT DIGITAL STUDIO
-              </span>
-              <span>MARKETING × CONTENT × AI × SOFTWARE × BRAND</span>
+              <span>TRUSTED BY 150+ CLIENTS</span>
+              <a href={`mailto:${site.email}`}>{site.email}</a>
             </div>
             <div className="hero-title-wrap">
               <h1
