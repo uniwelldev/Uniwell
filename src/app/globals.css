@@ -131,9 +131,6 @@ button {
   letter-spacing: 0.16em;
   color: #c6c1c6;
 }
-.hero-meta a:hover {
-  color: var(--violet);
-}
 .hero-title-wrap {
   position: relative;
   margin-top: 88px;

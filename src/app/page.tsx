@@ -17,7 +17,6 @@ import { Footer } from '@/components/footer';
 import { Intro } from '@/components/intro';
 import { Approach } from '@/components/approach';
 import { projects } from '@/lib/projects';
-import { site } from '@/lib/config';
 import { ProjectCard } from '@/components/project-card';
 
 export default function Home() {
@@ -29,8 +28,8 @@ export default function Home() {
           <Navigation />
           <section className="hero container">
             <div className="hero-meta" data-hero-reveal>
-              <span>TRUSTED BY 150+ CLIENTS</span>
-              <a href={`mailto:${site.email}`}>{site.email}</a>
+              <span>TRUSTED BY 54+ CLIENTS</span>
+              <span>SOFTWARE × MARKETING × CONTENT × AI × BRAND</span>
             </div>
             <div className="hero-title-wrap">
               <h1
