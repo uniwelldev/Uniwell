@@ -14,5 +14,4 @@ export const team: TeamMember[] = [
   { name: 'Ayushman Dwivedi', role: 'Team Member', photo: '/team/ayushman-dwivedi.png' },
   { name: 'Vivek Singh', role: 'Team Member', photo: '/team/vivek-singh.png' },
   { name: 'Aman Pratap Singh', role: 'Team Member', photo: '/team/aman-pratap-singh.png' },
-  { name: 'Ananya Singh', role: 'Team Member', photo: '/team/ananya-singh.png' },
 ];

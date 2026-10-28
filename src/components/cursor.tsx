@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 
 // Selectors that get pulled slightly toward the pointer.
 const MAGNETIC =
-  '.nav-cta, .round-arrow, .sv-hero-cta, .st-next, .t-send, .text-link, .chat-fab, .svc-link, .send-orb';
+  '.nav-cta, .round-arrow, .sv-hero-cta, .st-next, .t-send, .text-link, .whatsapp-fab, .svc-link, .send-orb';
 const TRAIL_MS = 380;
 
 // Cursor: an "inversion lens" that flips the colours beneath it, a short comet

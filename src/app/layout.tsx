@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Manrope, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import { site } from '@/lib/config';
-import { ChatLoader } from '@/components/chat-loader';
+import { WhatsAppButton } from '@/components/whatsapp-button';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -59,7 +59,7 @@ export default function RootLayout({
           Skip to content
         </a>
         {children}
-        <ChatLoader />
+        <WhatsAppButton />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

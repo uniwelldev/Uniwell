@@ -83,7 +83,7 @@ export const projects: Project[] = [
     challenge:
       'PAWAAC needed to explain complex autonomous drone technology to defence and police buyers in a way that feels credible and clear.',
     solution:
-      'We designed and built a cinematic, dark website with a 3D drone hero, sections on the problem, core technology (GPS-denied navigation, vision AI, decision OS), operating environments and products.',
+      'We designed and built a cinematic, dark website with a 3D drone hero, sections on the problem, core technology (GPS-denied navigation, vision AI, decision OS), operating environments and products. We also developed a Ground Station Application for drone control and management.',
     accent: 'linear-gradient(135deg,#000000,#3a3a3a)',
   },
 ];
