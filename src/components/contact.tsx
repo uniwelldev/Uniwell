@@ -4,7 +4,6 @@ import {
   ArrowLeft,
   ArrowRight,
   ArrowUpRight,
-  CalendarDays,
   Mail,
   MessageCircle,
 } from 'lucide-react';
@@ -169,12 +168,6 @@ export function Contact() {
               href={
                 site.whatsapp ? `https://wa.me/${site.whatsapp}` : undefined
               }
-            />
-            <Way
-              icon={<CalendarDays size={18} />}
-              label="BOOK A CALL"
-              value={site.bookingUrl ? 'Pick a time' : 'Coming soon'}
-              href={site.bookingUrl || undefined}
             />
           </div>
         </div>

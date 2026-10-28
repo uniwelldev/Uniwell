@@ -3,7 +3,6 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
   email: 'hello@bytelamp.com',
   whatsapp: '919569415995', // International number without +
-  bookingUrl: '', // Your Calendly/Cal.com public booking link
   description:
     'BYTELAMP is an independent digital studio building brands, experiences and intelligent systems.',
 };
